@@ -1,0 +1,36 @@
+{
+  "room_name": "The Locked Victorian Library",
+  "intro_text": "You wake up inside a locked Victorian library. A heavy iron exit door blocks your way, secured by a 4-digit keypad. Around you are a wooden desk, an oak bookshelf, an oil painting, and a locked drawer.",
+  "objects": {
+    "desk": {
+      "name": "Wooden Desk",
+      "description": "A mahogany desk covered in scattered parchment. A brass magnifying glass rests near the inkwell, and a locked drawer is built into the front.",
+      "contains_item": "magnifying_glass"
+    },
+    "bookshelf": {
+      "name": "Oak Bookshelf",
+      "description": "Three leather-bound books stand slightly pulled out. Inside their front covers are handwritten digits in red ink: 4, 1, and 9.",
+      "reveals_clue": "bookshelf_code"
+    },
+    "painting": {
+      "name": "Oil Painting",
+      "description": "An oil painting of a midnight clock tower. Without magnification, the corner inscription is too tiny to read clearly.",
+      "magnified_description": "Using the magnifying glass, you read the tiny carved inscription in the frame's corner: 'Hour VII' (7).",
+      "requires_item": "magnifying_glass",
+      "reveals_clue": "painting_hour"
+    },
+    "drawer": {
+      "name": "Locked Drawer",
+      "locked_description": "A sturdy desk drawer secured with a 3-digit combination lock.",
+      "unlocked_description": "The unlocked drawer holds a torn note reading: 'Append the painting's hour to the bookshelf digits to open the exit.'",
+      "code": "419",
+      "reveals_clue": "drawer_note"
+    },
+    "door": {
+      "name": "Heavy Iron Exit Door",
+      "locked_description": "A reinforced iron exit door with a 4-digit keypad.",
+      "unlocked_description": "The heavy bolts retract and the exit door swings open to freedom!",
+      "code": "4197"
+    }
+  }
+}
